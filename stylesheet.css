@@ -9,10 +9,11 @@ h1 {
 
 h2 {
     background-color: rgb(97, 8, 8);
+    border-radius: 10px;
     color: white;
     padding: .5em;
     padding-left: .75em;
-    width: 1580px;
+    width: auto;
 }
 
 p {
@@ -27,7 +28,8 @@ nav {
     margin-left: 0;
     padding: 1em;
     background-color: rgb(97, 8, 8);
-    width: 1580px;
+    width: 100em;
+    border-radius: 10px;
 }
 
 nav a {
@@ -39,22 +41,28 @@ nav a {
 }
 
 body {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 2em;
+    margin: auto;
+    padding: auto;
     background-color: wheat;
-    width: 1580px;
+    width: 100em;
 }
 
+/* Home CSS */
+
 .hpImg {
-    justify-self: center;
+    align-self: center;
 }
+
+/* Form CSS */
 
 legend {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     background-color: rgb(97, 8, 8);
-    border-radius: 5px;
+    border-radius: 7px;
     padding: .25em;
 }
 
@@ -66,8 +74,10 @@ form {
 
 fieldset {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-style: double;
+    border-style: solid;
     border-color: rgb(97, 8, 8);
+    border-width: 5px;
+    border-radius: 10px;
     width: auto;
     padding: 2em;
     padding-top: 1em;
@@ -110,4 +120,40 @@ fieldset button {
     margin-top: .25em;
     margin-bottom: .25em;
     width: 250px;
+}
+
+/* Links CSS */
+
+ul {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15pt;
+    list-style-type: none;
+}
+
+li {
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+/* Gallery CSS */
+
+.galleryPage .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.galleryPage img {
+    max-width: 400px;
+    max-height: 500px;
+    object-fit: scale-down;
+}
+
+.galleryPage label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15pt;
+    margin-bottom: 1em;
+    justify-self: center;
 }
