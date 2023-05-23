@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <nav>
+        <a href="/homepage.html">Home</a>
+        <a href="/">Contact Us</a>
+        <a href="/links.html">Helpful Links</a>
+        <a href="/gallery.html">Gallery</a>
+    </nav>
+
+    <form action="/" method="post">
+        <fieldset>
+            <legend>Contact Us</legend>
+
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="first_name">
+            </div>
+
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="last_name">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email_address">
+            </div>
+
+            <div>
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="number" id="phoneNumber" name="phone_number">
+            </div>
+
+            <div>
+                <label for="service">Select Service:</label>
+                <select id="service" name="service_select">
+                    <option value="consultation">Consultation</option>
+                    <option value="cleaning">Cleaning</option>
+                    <option value="construction">Construction</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="moreInfo">Additonal Information:</label>
+                <textarea id="moreInfo" name="additional_info"
+                    placeholder="Please provide any additional information..."></textarea>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
