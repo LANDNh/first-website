@@ -22,27 +22,27 @@
 
             <div class="firstName">
                 <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="first_name">
+                <input type="text" id="firstName" name="first_name" required>
             </div>
 
             <div class="lastName">
                 <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="last_name">
+                <input type="text" id="lastName" name="last_name" required>
             </div>
 
             <div class="email">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email_address">
+                <input type="email" id="email" name="email_address" required>
             </div>
 
             <div class="phoneNumber">
                 <label for="phoneNumber">Phone Number:</label>
-                <input type="number" id="phoneNumber" name="phone_number">
+                <input type="tel" id="phoneNumber">
             </div>
 
             <div class="service">
                 <label for="service">Select Service:</label>
-                <select id="service" name="service_select">
+                <select id="service" name="service_select" required>
                     <option value="consultation">Consultation</option>
                     <option value="cleaning">Cleaning</option>
                     <option value="construction">Construction</option>
@@ -50,23 +50,24 @@
             </div>
 
             <div class="moreInfo">
-                <label for="moreInfo">Additonal Information:</label>
+                <label for="moreInfo">Additonal Information:</label><br>
                 <textarea id="moreInfo" name="additional_info"
                     placeholder="Please provide any additional information..."></textarea>
             </div>
 
             <div class="currentDate">
                 <label for="currentDate">Current Date:</label>
-                <input type="date" id="currentDate" name="current_date">
+                <input type="date" id="currentDate" name="current_date" required>
             </div>
 
             <div class="certifyInfo">
-                <input type="checkbox" id="certifyInfo" name="certify_info">
+                <input type="checkbox" id="certifyInfo" name="certify_info" required>
                 <label for="certifyInfo">I certify that the above information is correct</label>
             </div>
 
-            <div class="submit">
+            <div class="submitReset">
                 <button type="submit">Submit</button>
+                <button type="reset">Reset Form</button>
             </div>
         </fieldset>
     </form>
